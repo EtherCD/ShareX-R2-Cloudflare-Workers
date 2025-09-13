@@ -18,7 +18,8 @@
 	"scripts": {
 		"build": "esbuild src/index.ts --format=esm --platform=neutral --bundle --minify --sourcemap --main-fields=browser,module,main --outfile=dist/index.mjs",
 		"check-types": "npm run check-types:worker && npm run check-types:tests",
-		"check-types:worker": "tsc --noEmit",
+		"wrg": "wrangler r2 bucket create s-files",
+                "check-types:worker": "tsc --noEmit",
 		"check-types:tests": "tsc --noEmit -p test/tsconfig.json",
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",

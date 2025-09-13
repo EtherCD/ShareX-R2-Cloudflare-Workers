@@ -1,5 +1,5 @@
 name = "sharex-r2-cloudflare-workers"
-account_id = "522ed7942a6ec29727e101623a48ea76"
+account_id = "c0baa3ca2bbd1100ab7104f0ae5e48be"
 workers_dev = true
 routes = [
 	{pattern = "r2-sharex.jross.me/*", zone_name = "jross.me"},
@@ -14,8 +14,8 @@ main = "./dist/index.mjs"
 command = "npm run build"
 
 [[r2_buckets]]
-bucket_name = "sharex-files"
-preview_bucket_name = "sharex-files"
+bucket_name = "s-files"
+preview_bucket_name = "s-files"
 binding = "R2_BUCKET"
 
 [vars]
