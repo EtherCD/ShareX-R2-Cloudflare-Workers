@@ -2,8 +2,7 @@ name = "sharex-r2-cloudflare-workers"
 account_id = "c0baa3ca2bbd1100ab7104f0ae5e48be"
 workers_dev = true
 routes = [
-	{pattern = "r2-sharex.jross.me/*", zone_name = "jross.me"},
-	{pattern = "i.james.pub/*", zone_name = "james.pub"}
+	{pattern = "shot.ether.cd/*", zone_name = "ether.cd"}
 ]
 # Что то
 
